@@ -1,0 +1,152 @@
+/* Basic Reset and Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f606f6;
+    color: #080202;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #fc02fc;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #81d1aa;
+    padding: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #010000;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e32e0f;
+}
+
+/* Recipe Container Styling */
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.recipe-card {
+    background-color: #7bda9f;
+    width: 300px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.recipe-details {
+    padding: 15px;
+}
+
+.recipe-details h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+/* About Section */
+.about-section {
+    padding: 40px 20px;
+    background-color: #cd06f5;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #ba05fc;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #7ed3ac;
+    border: none;
+    color: #040b09;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #f30b3d;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #dd08f5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipe-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}
